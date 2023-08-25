@@ -1,47 +1,86 @@
+/* Reset default margin and padding for better consistency */
 body {
-    margin: 60px auto;
-    width: 70%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Add a light background color */
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+
+/* Create a header with a background color and improved typography */
+header {
+    background-color: #0077b6; /* Choose a suitable header color */
+    color: #ffffff; /* Text color for the header */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the navigation menu */
+nav {
+    background-color: #333; /* Choose a suitable menu background color */
+    color: #ffffff; /* Text color for the menu */
+}
+
+nav ul {
     list-style: none;
+    padding: 0;
+    display: flex; /* Use flexbox for better layout */
+    justify-content: center; /* Center the menu items horizontally */
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
     font-weight: bold;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
+
+/* Style links */
 a:hover {
     text-decoration: underline;
 }
+
+/* Style headings */
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Verdana', 'Optima';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
+    font-size: 2.5em; /* Slightly reduce the font size for a cleaner look */
+    font-family: 'Helvetica', 'Verdana', 'Optima', sans-serif;
     color: #333;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+
+/* Style paragraphs */
+p {
+    font-size: 1.2em; /* Adjust the font size for readability */
+    line-height: 1.6;
+    color: #666; /* A slightly lighter text color for readability */
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the post list */
+ul.posts {
+    list-style: none;
+    padding: 20px;
+    background-color: #ffffff; /* Add a white background to the post list */
+    border-radius: 10px; /* Round the corners for a modern look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 ul.posts li {
-    list-style: none;
+    margin-bottom: 20px; /* Add spacing between posts */
 }
 
-.myimg{
-  border-radius:50%;
+/* Style your profile image */
+.myimg {
+    border-radius: 50%;
+    max-width: 100px; /* Limit the image size for consistency */
+    display: block; /* Center the image horizontally */
+    margin: 0 auto; /* Center the image horizontally */
 }
